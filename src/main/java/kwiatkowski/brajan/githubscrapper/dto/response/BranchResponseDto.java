@@ -5,15 +5,17 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
+/**
+ * Data Transfer Object (DTO) representing a response for a branch.
+ */
 @Builder
 @Setter
 @Getter
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class BranchResponseDto {
+
   private String name;
   private String sha;
 }

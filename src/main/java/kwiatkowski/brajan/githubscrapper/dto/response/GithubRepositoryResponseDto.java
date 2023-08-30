@@ -1,17 +1,22 @@
 package kwiatkowski.brajan.githubscrapper.dto.response;
 
 import java.util.List;
-import kwiatkowski.brajan.githubscrapper.dto.response.BranchResponseDto;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
+/**
+ * Data Transfer Object (DTO) representing a response for a GitHub repository.
+ */
 @Builder
 @Setter
 @Getter
-@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class GithubRepositoryResponseDto {
+
   private String name;
   private String owner;
   private List<BranchResponseDto> branches;

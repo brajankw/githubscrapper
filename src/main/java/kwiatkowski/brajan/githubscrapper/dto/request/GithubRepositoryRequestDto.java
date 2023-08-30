@@ -8,12 +8,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Data Transfer Object (DTO) representing a request for a GitHub repository.
+ */
 @Builder
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class GithubRepositoryRequestDto {
+
   private String name;
   private Owner owner;
   @JsonProperty("branches_url")
